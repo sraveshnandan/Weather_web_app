@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>HTML</title>
+
+ <!-- HTML -->
+
+
+ <!-- Custom Styles -->
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <!--outer container-->
+ <div class="container">
+  <!--main box-->
+  <div class="wrapper">
+ 
+   <!--menu box starts here-->
+  
+ <div class="menu">
+    <div class="mini_box">
+     <img class="menu_logo" src="assets/wind-solid.svg">
+    </div>
+    <div id="home" class="mini_box">
+     <img id="home" class="menu_logo" src="assets/house-solid.svg">
+     <span class="menu_txt">Home</span>
+    </div>
+    
+    <div  id="settings" class="mini_box">
+     <img class="menu_logo" src="assets/gear-solid.svg">
+     <span class="menu_txt">Settings</span>
+    </div>
+    <div  class="mini_box">
+     <img  id="mode" class="menu_logo" src="assets/moon-solid.svg" alt="assets/moon-solid.svg">
+     <span class="menu_txt">Modes</span>
+    </div>
+   </div>
+   <!--menu box ends here-->
+   <!--middle box starts-->
+ 
+ <div class="middle ">
+    <input placeholder="Search by city name" onchange="getdata()" id="search_box" type="search">
+    <div class="temp_box">
+     <div class="text_box">
+      <span id="city">
+       City_Name
+      </span>
+      <br>
+      <small></small>
+      <br>
+      <div id="temp_main">23°c</div>
+     </div>
+     <img src="assets/cloud.png">
+
+
+    </div>
+    <div id="t" class="today">
+     <span id="heading">Today's Forecast</span>
+     <div class="for_box">
+     <!--- <div class="for_data">
+       <span id="heading">08:00</span>
+       <img src="assets/cloud.png" alt="assets/cloud.png" width="80px" height="80px">
+       <span id="temp_min">28°c</span>
+      </div>-->
+    
+     </div>
+
+
+
+    </div>
+    <div id="boxs" class="today condition">
+     <div class="btn_box">
+      <span id="heading">Air Condition</span>
+      <button type="button" class="btn" onclick="see_more()">see more</button>
+     </div>
+     <div id="test" class="condition_data_box">
+      <div class="condition_data">
+       <span id="heading">Uv Index</span>
+       <br>
+       <span id="value">6</span>
+      </div>
+      <div class="condition_data">
+       <span id="heading">Uv Index</span>
+       <br>
+       <span id="value">6</span>
+      </div>
+      <div class="condition_data">
+       <span id="heading">Uv Index</span>
+       <br>
+       <span id="value">6</span>
+      </div>
+      <div class="condition_data">
+       <span id="heading">Uv Index</span>
+       <br>
+       <span id="value">6</span>
+      </div>
+
+
+     </div>
+
+
+
+    </div>
+
+
+   </div>
+   <!--middle box ends-->
+   <!--week section starts-->
+ <div class="week_temp ">
+    <div class="t"></div>
+    <div class="week">
+     <span id="heading">7 day forecast</span>
+     <div class="week_day">
+      
+      
+     </div>
+    </div>
+   </div>
+   <!--week section ends-->
+
+  
+   <!--Start page -->
+   <div class="start">
+    <!--left section-->
+    <div class="left flex">
+     <img src="assets/cloud.png" width="350px" height="350px">
+     
+    </div>
+    <!--left section ends-->
+    <!--Right section start-->
+    <div class="right">
+     <img src="assets/cloud.png"  width="80px" height="80px">
+     <span class="bold h1">Open Weather</span>
+     <span class="heading">Weather Web App</span>
+     <button id="s"  type="button" class="btn_primary"> Get Started</button>
+     
+    </div>
+    <!--Right section ends-->
+    
+   </div>
+<!--Start pagr ends-->
+  </div>
+ </div>
+ <!--footer-->
+ <div>
+
+  Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+ </div>
+ <script src="main.js"></script>
+</body>
+
+</html>
